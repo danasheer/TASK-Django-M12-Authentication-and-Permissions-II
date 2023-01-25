@@ -44,9 +44,11 @@
             <a class="nav-link" href="{% url 'movie-list' %}">Movies</a>
           </li>
         </ul>
+        <button><a href="{% url 'regester-page' %}"> register</a></button>
       </div>
     </nav>
-
+        {% block content %}
+        {% endblock %}
     <main class="bg-light h-100">
       <article class="container">
         <h1>Welcome to our awesome movie database!</h1>
